@@ -1,12 +1,13 @@
 select first_name, last_name, 'old man' as label
-From employee_demographics 
-where age > 40 AND gender = ' male'
+From employee_demographics
+where age > 40 and gender = 'male'
 union 
 select first_name, last_name, 'old lady' as label
 from employee_demographics
-where age > 40 AND gender = 'female'
+where age > 40 and gender = 'female'
 union
-select frist_name, last_name, 'Highly Paid Employee'
+select first_name, last_name, 'Highly Paid'
 From employee_salary
 where salary > 70000
+order by first_name, Last_name
 ; 
