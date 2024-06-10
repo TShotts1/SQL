@@ -1,0 +1,31 @@
+-- Table sample --
+SELECT *
+FROM superstore
+;
+
+-- Order items by price --
+
+SELECT item_name, price
+FROM superstore
+WHERE item_name
+Order by price
+;
+
+-- Average price --
+
+SELECT AVG(price)
+FROM superstore
+;
+
+-- Most expensive item in 'Kitchen Supplies' --
+
+SELECT MAX(price)
+From superstore
+WHERE category = 'Kitchen Supplies'
+
+-- stock_quantity greater than 50 in each category --
+
+Select category, stock_quantity
+FROM superstore
+Where stock_quantity > 50
+;
